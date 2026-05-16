@@ -6,18 +6,18 @@ import Layout from "@/components/Layout";
 const features = [
   {
     icon: Sparkles,
-    title: "Estrategia Creativa",
-    description: "Creamos narrativas atractivas que conectan con tu audiencia.",
+    title: "Impulso estratégico",
+    description: "Buscamos narrativas atractivas que conectan con tu audiencia y las tendencias de la actualidad.",
   },
   {
     icon: Palette,
-    title: "Diseño Visual",
-    description: "Diseños hermosos y funcionales que dan vida a tu marca.",
+    title: "Creación de contenidos",
+    description: "Construimos los formatos más efectivos a la hora de transmitir tu mensaje, desde reels hasta grandes impresiones.",
   },
   {
     icon: Users,
-    title: "Creación de Contenido",
-    description: "Contenido atractivo que conecta y convierte.",
+    title: "Campañas publicitarias",
+    description: "Optimizamos la inversión publicitaria en redes sociales y medios tradicionales para convertir nuevos clientes.",
   },
 ];
 
@@ -29,19 +29,19 @@ const Index = () => {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4 animate-fade-up">
-              Agencia de Contenido Digital
+              Agencia de Contenidos Digitales
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-up delay-100">
-              Creamos experiencias digitales que{" "}
-              <span className="text-primary">inspiran</span>
+              Inspirando la comunicación de la provincia de {" "}
+              <span className="text-primary">Huesca</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8 animate-fade-up delay-200">
-              Un pequeño estudio con grandes ideas. Ayudamos a las marcas a contar sus historias a través de diseño pensado, contenido atractivo y creatividad estratégica.
+              Conectamos a empresas e instituciones con sus audiencias a través del impulso estratégico, creación de contenidos y campañas publicitarias.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
               <Button asChild size="lg" className="hover-lift">
                 <Link to="/portfolio">
-                  Ver Nuestro Trabajo
+                  Mira nuestros trabajos
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -58,10 +58,10 @@ const Index = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Lo Que Hacemos
+              #ParaTi
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Combinamos creatividad y estrategia para ayudar a tu marca a destacar.
+              Definimos una hoja de ruta a medida para ayudarte a destacar.
             </p>
           </div>
 
@@ -95,11 +95,11 @@ const Index = () => {
               ¿Listo para comenzar tu proyecto?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Colaboremos y creemos algo increíble juntos.
+              Somos todo oídos.
             </p>
             <Button asChild size="lg" className="hover-lift">
               <Link to="/contact">
-                Iniciar una Conversación
+                Habla con nosotros
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

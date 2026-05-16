@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="text-xl md:text-2xl font-bold text-foreground">
-            Estudio<span className="text-primary">.</span>
+            134 Comunicación
           </Link>
 
           {/* Desktop Navigation */}

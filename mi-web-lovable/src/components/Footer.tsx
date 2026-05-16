@@ -16,10 +16,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="text-xl font-bold text-foreground">
-              Estudio<span className="text-primary">.</span>
+              134 Comunicación
             </Link>
             <p className="text-muted-foreground text-sm max-w-xs">
-              Una pequeña agencia de contenido digital creando experiencias hermosas para marcas que se preocupan.
+              Una agencia de soluciones de marketing y comunicación para marcas que quieren crecer.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Estudio. Todos los derechos reservados.
+            © {new Date().getFullYear()} | 134 Comunicación | Todos los derechos reservados.
           </p>
         </div>
       </div>

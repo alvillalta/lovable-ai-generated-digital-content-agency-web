@@ -5,17 +5,17 @@ const values = [
   {
     icon: Heart,
     title: "Pasión",
-    description: "Amamos lo que hacemos, y se nota en cada proyecto que entregamos.",
+    description: "Amamos lo que hacemos, y eso se nota en nuestra forma de hacer las cosas.",
   },
   {
     icon: Target,
     title: "Propósito",
-    description: "Cada decisión de diseño es intencional y está alineada con tus objetivos.",
+    description: "Cada decisión ejecutada es intencional y está alineada con tus objetivos.",
   },
   {
     icon: Zap,
-    title: "Innovación",
-    description: "Nos mantenemos a la vanguardia para mantener tu marca fresca y relevante.",
+    title: "Compromiso",
+    description: "Nos debemos a la gente «de pueblo» que levanta la persiana cada día.",
   },
 ];
 
@@ -30,10 +30,10 @@ const About = () => {
               Nosotros
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Pequeño estudio, gran impacto
+              +25 años a nuestras espaldas
             </h1>
             <p className="text-lg text-muted-foreground animate-fade-up delay-200">
-              Somos un equipo unido de creativos, estrategas y narradores apasionados por ayudar a las marcas a conectar con sus audiencias de manera significativa.
+              Somos un equipo multidisciplinar con una sólida experiencia en el mercado local de la provincia de Huesca. Conocemos el territorio y la mejor manera de llegar a las personas que lo habitan.
             </p>
           </div>
         </div>
@@ -46,22 +46,22 @@ const About = () => {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-foreground">Nuestra Historia</h2>
               <p className="text-muted-foreground">
-                Fundados con una simple creencia: que el gran diseño debe ser accesible para todos. Comenzamos como un pequeño equipo trabajando desde un diminuto estudio, impulsados por café y creatividad.
+                134 Comunicación nació en 1997 con una idea clara: ir más allá de la publicidad convencional. Su fundador, José Antonio Almunia, se dio cuenta de que muchos anunciantes necesitaban algo más que aparecer en la prensa local para llegar a su público. Y así arrancó este proyecto, con el objetivo de dar respuesta a las demandas de comunicación del tejido empresarial de la zona.
               </p>
               <p className="text-muted-foreground">
-                Hoy hemos crecido, pero mantenemos ese mismo enfoque íntimo y colaborativo. Cada cliente se siente como un socio, y cada proyecto recibe toda nuestra atención y cuidado.
+                A lo largo del tiempo, la empresa ha ido creciendo hasta consolidarse como una agencia multidisciplinar especializada en el ámbito rural de la provincia de Huesca. Un hecho que, al echar la vista atrás, ha dado lugar a numerosas campañas e iniciativas de fuerte componente social, respaldadas por aquellas entidades que querían darse a conocer.
               </p>
               <p className="text-muted-foreground">
-                Creemos en la calidad sobre la cantidad, las relaciones sobre las transacciones, y crear trabajo del que estamos genuinamente orgullosos.
+                Hoy, esa misma filosofía nos impulsa a seguir evolucionando. Apostamos por la transición digital y nuevas herramientas de inteligencia artificial para continuar vertebrando la influencia de nuestro entorno. 
               </p>
             </div>
-            <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">✨</span>
-                </div>
+
+              <div className="relative aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent overflow-hidden">
+
+                  <img src="././images/José Antonio Almunia Portolés - Fundador.webp" alt="José Antonio Almunia Portolés - Fundador de 134 Comunicación" className="object-cover w-full h-full" />
+
               </div>
-            </div>
+
           </div>
         </div>
       </section>
