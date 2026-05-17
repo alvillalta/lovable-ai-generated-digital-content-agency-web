@@ -1,11 +1,11 @@
-import { Heart, Target, Zap } from "lucide-react";
+import { Heart, Target, Handshake } from "lucide-react";
 import Layout from "@/components/Layout";
 
 const values = [
   {
     icon: Heart,
     title: "Pasión",
-    description: "Amamos lo que hacemos, y eso se nota en nuestra forma de hacer las cosas.",
+    description: "Nos encanta nuestro trabajo, y se nota en nuestra forma de hacer las cosas.",
   },
   {
     icon: Target,
@@ -13,7 +13,7 @@ const values = [
     description: "Cada decisión ejecutada es intencional y está alineada con tus objetivos.",
   },
   {
-    icon: Zap,
+    icon: Handshake,
     title: "Compromiso",
     description: "Nos debemos a la gente «de pueblo» que levanta la persiana cada día.",
   },
@@ -29,10 +29,10 @@ const About = () => {
             <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4 animate-fade-up">
               Nosotros
             </p>
-            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 animate-fade-up delay-100">
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 animate-fade-up">
               +25 años a nuestras espaldas
             </h1>
-            <p className="text-lg text-muted-foreground animate-fade-up delay-200">
+            <p className="text-lg text-muted-foreground animate-fade-up">
               Somos un equipo multidisciplinar con una sólida experiencia en el mercado local de la provincia de Huesca. Conocemos el territorio y la mejor manera de llegar a las personas que lo habitan.
             </p>
           </div>
@@ -81,7 +81,6 @@ const About = () => {
               <div
                 key={value.title}
                 className="text-center p-8 rounded-xl bg-card border border-border animate-fade-up"
-                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
                   <value.icon className="w-7 h-7 text-primary" />

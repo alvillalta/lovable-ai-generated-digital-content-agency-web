@@ -3,35 +3,41 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
   {
-    title: "Identidad de Marca para Bloom",
-    category: "Branding",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=450&fit=crop",
+    title: "Revista mensual - Vivir",
+    category: "Diseño editorial",
+    image: "././images/Revista Vivir.webp",
+    href: "https://heyzine.com/flip-book/7695ad0002.html"
   },
   {
-    title: "Campaña Social - Fresh Co",
-    category: "Redes Sociales",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=450&fit=crop",
+    title: "Dirección audiovisual - Gobierno de Aragón",
+    category: "Documental",
+    image: "././images/Crónicas de un pueblo Gobierno de Aragón.webp", 
+    href: "https://www.youtube.com/watch?v=LZKkKzXd-5U"
   },
   {
-    title: "Rediseño Web - Artisan",
-    category: "Diseño Web",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=450&fit=crop",
+    title: "Producción - Premios Félix de Azara",
+    category: "Eventos",
+    image: "././images/XXV Gala de los Premios Félix de Azara.webp",
+    href: "https://www.youtube.com/watch?v=1PhwjbMRRbU"
   },
   {
-    title: "Fotografía de Producto - Luma",
-    category: "Fotografía",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=450&fit=crop",
+    title: "Emisión TV - Balnearios de Aragón",
+    category: "Spot",
+    image: "././images/Spot Balnearios de Aragón.webp",
+    href: "https://www.youtube.com/watch?v=R2W9awZfI5s"
   },
   {
-    title: "Estrategia de Contenido - Verde",
-    category: "Estrategia",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop",
+    title: "Estrategia de contenido - Zoológico Iris",
+    category: "Redes sociales",
+    image: "././images/Reel Zoológico Iris.webp",
+    href: "https://www.instagram.com/huescatalento/reel/C1sJCy4Ix7Z/"
   },
   {
-    title: "Producción de Video - Pulse",
-    category: "Video",
-    image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=450&fit=crop",
-  },
+    title: "Edición de vídeo - Comarca de Monegros",
+    category: "Vídeo",
+    image: "././images/La línea de la vida Comarca de Monegros.webp",
+    href: "https://www.youtube.com/watch?v=SNoUt4bUFWY"
+  }
 ];
 
 const Portfolio = () => {
@@ -42,12 +48,12 @@ const Portfolio = () => {
         <div className="container-custom">
           <div className="max-w-3xl">
             <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4 animate-fade-up">
-              Nuestro Trabajo
+              Nuestros Trabajos
             </p>
-            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 animate-fade-up delay-100">
-              Portafolio
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6 animate-fade-up">
+              Portfolio
             </h1>
-            <p className="text-lg text-muted-foreground animate-fade-up delay-200">
+            <p className="text-lg text-muted-foreground animate-fade-up">
               Una selección de proyectos de los que estamos orgullosos. Cada uno cuenta una historia única.
             </p>
           </div>
@@ -65,6 +71,7 @@ const Portfolio = () => {
                 category={project.category}
                 image={project.image}
                 index={index}
+                href={project.href}
               />
             ))}
           </div>

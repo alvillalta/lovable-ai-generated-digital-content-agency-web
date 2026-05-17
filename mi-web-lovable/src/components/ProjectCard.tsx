@@ -1,15 +1,19 @@
+import { Link } from "react-router-dom";
+
 interface ProjectCardProps {
   title: string;
   category: string;
   image: string;
   index: number;
+  href: string;
 }
 
-const ProjectCard = ({ title, category, image, index }: ProjectCardProps) => {
+const ProjectCard = ({ title, category, image, index, href }: ProjectCardProps) => {
   return (
+    <Link to={href ? href : "#"} target={href ? "_blank" : null}>
+
     <div 
       className="group cursor-pointer animate-fade-up"
-      style={{ animationDelay: `${index * 100}ms` }}
     >
       <div className="relative overflow-hidden rounded-xl bg-muted aspect-[4/3]">
         <img
@@ -28,6 +32,7 @@ const ProjectCard = ({ title, category, image, index }: ProjectCardProps) => {
         </h3>
       </div>
     </div>
+    </Link>
   );
 };
 

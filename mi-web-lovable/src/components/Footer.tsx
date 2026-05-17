@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { Instagram, Twitter, Linkedin, Mail } from "lucide-react";
+import { Instagram, Linkedin, Mail } from "lucide-react";
 
 const socialLinks = [
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hola@estudio.com", label: "Correo" },
+  { icon: Instagram, href: "https://www.instagram.com/huescatalento/", label: "Instagram", target: "_blank" },
+  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", target: "_blank" },
+  { icon: Mail, href: "mailto:joseantonio@134comunicacion.com", label: "Correo" },
 ];
 
 const Footer = () => {
@@ -36,7 +35,7 @@ const Footer = () => {
                 Nosotros
               </Link>
               <Link to="/portfolio" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Portafolio
+                Portfolio
               </Link>
               <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Contacto
@@ -54,7 +53,7 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
-                  target="_blank"
+                  target={social.target ? social.target : null}
                   rel="noopener noreferrer"
                   aria-label={social.label}
                   className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover-lift"

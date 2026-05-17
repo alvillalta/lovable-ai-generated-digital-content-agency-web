@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
   { name: "Inicio", path: "/" },
   { name: "Nosotros", path: "/about" },
-  { name: "Portafolio", path: "/portfolio" },
+  { name: "Portfolio", path: "/portfolio" },
   { name: "Contacto", path: "/contact" },
 ];
 
@@ -19,7 +19,7 @@ const Header = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="text-xl md:text-2xl font-bold text-foreground">
-            134 Comunicación
+            <img src="././images/134 Comunicación.png" alt="Logo de 134 Comunicación" className="h-10 md:h-14 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,7 +40,9 @@ const Header = () => {
           </nav>
 
           <Button asChild className="hidden md:inline-flex hover-lift">
-            <Link to="/contact">Contáctanos</Link>
+            <Link to="https://wa.me/34609726905" target="_blank">
+              Contáctanos
+            </Link>
           </Button>
 
           {/* Mobile Menu Button */}

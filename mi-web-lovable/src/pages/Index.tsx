@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Sparkles, Users, Palette } from "lucide-react";
+import { ArrowRight, Sparkles, Rocket, Megaphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 
 const features = [
   {
-    icon: Sparkles,
+    icon: Rocket,
     title: "Impulso estratégico",
     description: "Buscamos narrativas atractivas que conectan con tu audiencia y las tendencias de la actualidad.",
   },
   {
-    icon: Palette,
+    icon: Sparkles,
     title: "Creación de contenidos",
     description: "Construimos los formatos más efectivos a la hora de transmitir tu mensaje, desde reels hasta grandes impresiones.",
   },
   {
-    icon: Users,
+    icon: Megaphone,
     title: "Campañas publicitarias",
     description: "Optimizamos la inversión publicitaria en redes sociales y medios tradicionales para convertir nuevos clientes.",
   },
@@ -31,14 +31,14 @@ const Index = () => {
             <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4 animate-fade-up">
               Agencia de Contenidos Digitales
             </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-up delay-100">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-up">
               Inspirando la comunicación de la provincia de {" "}
               <span className="text-primary">Huesca</span>
             </h1>
-            <p className="text-lg text-muted-foreground mb-8 animate-fade-up delay-200">
+            <p className="text-lg text-muted-foreground mb-8 animate-fade-up">
               Conectamos a empresas e instituciones con sus audiencias a través del impulso estratégico, creación de contenidos y campañas publicitarias.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up">
               <Button asChild size="lg" className="hover-lift">
                 <Link to="/portfolio">
                   Mira nuestros trabajos
@@ -70,7 +70,6 @@ const Index = () => {
               <div
                 key={feature.title}
                 className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-lg transition-all duration-300 animate-fade-up"
-                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4">
                   <feature.icon className="w-6 h-6 text-primary" />
