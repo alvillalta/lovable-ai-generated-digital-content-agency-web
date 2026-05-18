@@ -11,7 +11,8 @@ const Footer = () => {
   return (
     <footer className="bg-secondary/50 border-t border-border">
       <div className="container-custom py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="text-xl font-bold text-foreground">
@@ -39,6 +40,24 @@ const Footer = () => {
               </Link>
               <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                 Contacto
+              </Link>
+            </nav>
+          </div>
+
+          {/* Legal Texts */}
+          <div className="space-y-4 text-sm">
+            <h4 className="text-sm font-semibold text-foreground uppercase tracking-wider">
+              Textos legales
+            </h4>
+            <nav className="flex flex-col gap-2">
+              <Link to="/politica-privacidad" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Política de privacidad
+              </Link>
+              <Link to="/aviso-legal" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Aviso legal
+              </Link>
+              <Link to="/politica-cookies" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Política de cookies
               </Link>
             </nav>
           </div>

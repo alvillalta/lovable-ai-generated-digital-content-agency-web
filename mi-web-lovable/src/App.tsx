@@ -6,6 +6,9 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import LegalNotice from "./pages/LegalNotice";
+import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +23,9 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/politica-privacidad" element={<PrivacyPolicy />} />
+          <Route path="/aviso-legal" element={<LegalNotice />} />
+          <Route path="/politica-cookies" element={<CookiePolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </TooltipProvider>
