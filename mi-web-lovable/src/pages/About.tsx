@@ -56,7 +56,7 @@ const About = () => {
               </p>
             </div>
 
-              <div className="relative aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent overflow-hidden">
+              <div className="relative aspect-square rounded-2xl bg-gradient-to-br from-primary to-accent overflow-hidden">
 
                   <img src="././images/José Antonio Almunia Portolés - Fundador.webp" alt="José Antonio Almunia Portolés - Fundador de 134 Comunicación" className="object-cover w-full h-full" />
 

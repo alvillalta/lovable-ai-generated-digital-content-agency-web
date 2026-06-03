@@ -32,8 +32,8 @@ const Index = () => {
               Agencia de Contenidos Digitales
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-up">
-              Inspirando la comunicación de la provincia de {" "}
-              <span className="text-primary">Huesca</span>
+              Inspirando la Comunicación {" "}
+              <span className="text-primary">Global y Local</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8 animate-fade-up">
               Conectamos a empresas e instituciones con sus audiencias a través del impulso estratégico, creación de contenidos y campañas publicitarias.
